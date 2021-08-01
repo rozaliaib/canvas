@@ -19,7 +19,7 @@ def motion(x, y):
     if c.coords(ball)[2] != x or c.coords(ball)[3] != y:
         c.move(ball, x_dir, y_dir)
         if c.coords(ball)[2] != x or c.coords(ball)[3] != y:
-            root.after(10, motion(x, y))
+            root.after(10, lambda: motion(x, y))
 
        # c.move(ball, 1, 0)
         #if c.coords(ball)[2] < x:
